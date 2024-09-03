@@ -1,13 +1,13 @@
 document.getElementById('submit-btn').addEventListener('click', (e) => {
     e.preventDefault();
     if (document.getElementById('submit-btn').disabled) {
-        return; // تحقق من أن الزر معطل إذا كانت الحقول غير صالحة
+        return; 
     }
 
-    // إخفاء النموذج
+    
     document.getElementsByTagName('form')[0].style.display = 'none';
 
-    // إظهار رسالة النجاح
+    
     document.getElementById('success-message').style.display = 'block';
 });
 
